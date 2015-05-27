@@ -1,0 +1,41 @@
+//http://codepen.io/anon/pen/eNJLbG
+
+var defaults = {
+	"text":{
+		"border-style":"solid",
+		"border-color":"#403C3C",
+		"border-top-width":"0px",
+		"border-left-width":"0px",
+		"border-right-width":"0px",
+		"border-bottom-width":"0px",
+		"background-color":"",
+		"width":"200px",
+		"height":"200px",
+		"padding-top":"5px",
+		"padding-left":"5px",
+		"padding-right":"5px",
+		"padding-bottom":"5px",
+		"top":"0px",
+		"left":"0px",
+		"z-index":"999999"
+	},
+	"image":{
+		"border-style":"solid",
+		"border-color":"#403C3C",
+		"border-top-width":"2px",
+		"border-left-width":"2px",
+		"border-right-width":"2px",
+		"border-bottom-width":"2px",
+		"background-color":"",
+		"width":"",
+		"height":"",
+		"padding-top":"0px",
+		"padding-left":"0px",
+		"padding-right":"0px",
+		"padding-bottom":"0px",
+		"top":"0px",
+		"left":"0px",
+		"z-index":"999999",
+		"box-shadow":"5px 5px 10px rgba(0, 0, 0, .5)",
+	}
+};

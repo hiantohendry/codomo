@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing</title>
+		<link rel="stylesheet" href="style/default.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		
+		<script src="script/data.js"></script>
+		<script src="script/default.js"></script>
+		<script src="script/jquery.min.js"></script>
+		<script src="script/jquery-ui/jquery-ui.min.js"></script>
+		<script src="script/script.js"></script>
+	</head>
+	<body>
+		<button onclick="addItem('text')">text</button>
+		<button onclick="addItem('image')">image</button>
+		-
+		<button onclick="save()">save</button>
+		<span id="console"></span>
+		<form>
+			<input type="number" id="width" data-css="width" placeholder="width" /><br />
+			<input type="number" id="height" data-css="height" placeholder="height" /><br />
+			<input type="number" id="pad-top" data-css="padding-top" placeholder="padding top" /><br />
+			<input type="number" id="pad-left" data-css="padding-left" placeholder="padding left" /><br />
+			<input type="number" id="pad-right" data-css="padding-right" placeholder="padding right" /><br />
+			<input type="number" id="pad-bottom" data-css="padding-bottom" placeholder="padding bottom" /><br />
+			<input type="number" id="border-top" data-css="border-top-width" placeholder="border top" /><br />
+			<input type="number" id="border-left" data-css="border-left-width" placeholder="border left" /><br />
+			<input type="number" id="border-right" data-css="border-right-width" placeholder="border right" /><br />
+			<input type="number" id="border-bottom" data-css="border-bottom-width" placeholder="border bottom" /><br />
+			<input type="color" id="border-color" data-css="border-color" placeholder="border color" /><br />
+			<input type="color" id="back-color" data-css="background-color" placeholder="background color" /><br />
+		</form>
+		<div class="background w1000 h500">
+		</div>
+	</body>
+</html>

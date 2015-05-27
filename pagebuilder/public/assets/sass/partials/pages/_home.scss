@@ -1,0 +1,113 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body{
+	height: 100%;
+}
+
+.workspace{
+	@include clearfix;
+	height: 100%;
+	background: $workspace;
+}
+.board{
+	float: left;
+	width: calc(100% - 200px);
+	height: 100%;
+	background: $board;
+	overflow: scroll
+}
+.sidebar{
+	float: left;
+	padding: 10px 20px;
+	width: 200px;
+	height: 100%;
+	background: $sidebar;
+	@include single-transition(all, 200ms, ease);
+	@include box-shadow(0px -1px 2px #000);
+}
+
+.action{
+	text-align: center;
+
+	.btn{
+		margin-right: 8px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.tools{
+	@extend .action;
+	text-align: left;
+}
+
+.title{
+	font-size: 16px;
+	font-weight: 700;
+	padding: 20px 0 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.properties{
+	font-size: 14px;
+	>div{
+		margin-top: 15px;
+	}
+}
+
+#prop-name{
+	text-align: center;
+}
+
+#lock-button{
+	.fa-lock{
+		display: none;
+	}
+	&.locked{
+		.fa-lock{
+			display: block;
+		}
+		.fa-unlock{
+			display: none;
+		}
+	}
+}
+
+#prop-dimension{
+	text-align: center;
+	div{
+		display: inline-block;
+		width: 30%;
+		vertical-align: middle;
+		text-align: center;
+
+		input[type=number]{
+			width: 100%;
+		}
+	}
+}
+
+#padding, #border{
+	@include clearfix;
+	label{
+		line-height: 69px;
+		float: left; 
+	}
+	table{
+		float: right;
+		td{
+			width: (100px / 3);
+		}
+	}
+	input[type=number]{
+		width: 100%;
+	}
+}

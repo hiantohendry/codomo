@@ -1,0 +1,11 @@
+<?php echo $__env->make('include.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div class="workspace">
+    <div class="board" page-id="<?php echo $page_id; ?>" style="width: 100%">
+		<div class="page" id="Page">
+			<div id="text-editor"></div>
+		</div>
+	</div>
+</div>
+
+<?php echo $__env->make('include.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

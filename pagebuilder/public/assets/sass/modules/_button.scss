@@ -1,0 +1,53 @@
+.btn{
+	border: 1px solid transparent;
+	@include single-transition(all, 200ms, linear);
+}
+
+.action-button {
+	width: 45px;
+	height: 45px;
+	background: $action;
+	color: $action-text;
+	font-size: 25px;
+	@include border-radius(3px);
+}
+
+.small-button{
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+}
+
+.action-button.active,
+.action-button.focus,
+.action-button:focus,
+.action-button:hover{
+	background: $action-text;
+	color: $action;
+	@include rotate(2deg);
+}
+
+.action-button:active{
+	color: black;
+}
+
+.action-button.disabled,
+.action-button.disabled.active,
+.action-button.disabled.focus,
+.action-button.disabled:active,
+.action-button.disabled:focus,
+.action-button.disabled:hover,
+.action-button[disabled],
+.action-button[disabled].active,
+.action-button[disabled].focus,
+.action-button[disabled]:active,
+.action-button[disabled]:focus,
+.action-button[disabled]:hover,
+fieldset[disabled] .action-button,
+fieldset[disabled] .action-button.active,
+fieldset[disabled] .action-button.focus,
+fieldset[disabled] .action-button:active,
+fieldset[disabled] .action-button:focus,
+fieldset[disabled] .action-button:hover {
+	background: $grey;
+}
