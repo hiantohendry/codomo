@@ -94,7 +94,7 @@ function addItem(type, src){
 	switch(type) {
 		case "text":
 			key = "Text" + ++$(".text").length;
-			$(".page").append("<div class='item text' id='" + key + "'></div>");
+			$(".page").append("<div class='item text' id='" + key + "'>"+key+"</div>");
 			$.each(defaults["text"], function(prop, value){
 				$("#" + key).css(prop, value)
 			});
